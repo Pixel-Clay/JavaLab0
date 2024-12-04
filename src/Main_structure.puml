@@ -1,0 +1,353 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": false,
+    "cutTests": false,
+    "cutClient": false,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": false,
+    "cutConstructors": false
+  },
+  "graphTraversal": {
+    "forwardDepth": 3,
+    "backwardDepth": 3,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": false,
+    "hideInterfaceCalls": false, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 3,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "Main",
+  "extensionCallbackMethod": ".pumi" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_2390489 { 
+   	label=Main
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Main2390489[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Main</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ main(args: String[])</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_399033133 { 
+   	label=pokemon
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Bellsprout399033133[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Bellsprout</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Bellsprout(name: String, level: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Comfey399033133[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Comfey</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Comfey(name: String, level: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Eevee399033133[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Eevee</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Eevee(name: String, level: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Jolteon399033133[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Jolteon</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Jolteon(name: String, level: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Victreebel399033133[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Victreebel</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Victreebel(name: String, level: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Weepinbell399033133[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Weepinbell</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Weepinbell(name: String, level: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_675357909 { 
+   	label=attacks
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Confide675357909[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Confide</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Confide()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ applyOppEffects(p: Pokemon)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ checkAccuracy(att: Pokemon, def: Pokemon): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ describe(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+DazzlingGleam675357909[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)DazzlingGleam</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ DazzlingGleam()</TD></TR>
+<TR><TD ALIGN="LEFT" ># describe(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+EnergyBall675357909[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)EnergyBall</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ EnergyBall()</TD></TR>
+<TR><TD ALIGN="LEFT" ># applyOppEffects(p: Pokemon)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ describe(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Facade675357909[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Facade</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Facade()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ applySelfEffects(p: Pokemon)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ describe(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+PoisonJab675357909[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)PoisonJab</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ PoisonJab()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ applyOppEffects(p: Pokemon)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ describe(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+QuickAttack675357909[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)QuickAttack</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ QuickAttack()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ describe(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+SandAttack675357909[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)SandAttack</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ SandAttack()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ applyOppEffects(p: Pokemon)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ describe(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+StunSpore675357909[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)StunSpore</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ StunSpore()</TD></TR>
+<TR><TD ALIGN="LEFT" ># applyOppEffects(p: Pokemon)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ describe(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+SweetKiss675357909[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)SweetKiss</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ SweetKiss()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ applyOppEffects(p: Pokemon)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ describe(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ThunderShock675357909[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ThunderShock</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ ThunderShock()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ applyOppEffects(p: Pokemon)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ describe(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+'edges    
+Bellsprout399033133 -> EnergyBall675357909[label="Bellsprout() -> EnergyBall()"];
+Bellsprout399033133 -> PoisonJab675357909[label="Bellsprout() -> PoisonJab()"];
+Bellsprout399033133 -> Weepinbell399033133[arrowhead=none, arrowtail=empty, dir=both];
+Comfey399033133 -> Confide675357909[label="Comfey() -> Confide()"];
+Comfey399033133 -> DazzlingGleam675357909[label="Comfey() -> DazzlingGleam()"];
+Comfey399033133 -> Facade675357909[label="Comfey() -> Facade()"];
+Comfey399033133 -> SweetKiss675357909[label="Comfey() -> SweetKiss()"];
+Eevee399033133 -> Facade675357909[label="Eevee() -> Facade()"];
+Eevee399033133 -> Jolteon399033133[arrowhead=none, arrowtail=empty, dir=both];
+Eevee399033133 -> QuickAttack675357909[label="Eevee() -> QuickAttack()"];
+Eevee399033133 -> SandAttack675357909[label="Eevee() -> SandAttack()"];
+Jolteon399033133 -> ThunderShock675357909[label="Jolteon() -> ThunderShock()"];
+Main2390489 -> Bellsprout399033133[label="main() -> Bellsprout()"];
+Main2390489 -> Comfey399033133[label="main() -> Comfey()"];
+Main2390489 -> Eevee399033133[label="main() -> Eevee()"];
+Main2390489 -> Jolteon399033133[label="main() -> Jolteon()"];
+Main2390489 -> Victreebel399033133[label="main() -> Victreebel()"];
+Main2390489 -> Weepinbell399033133[label="main() -> Weepinbell()"];
+Weepinbell399033133 -> StunSpore675357909[label="Weepinbell() -> StunSpore()"];
+Weepinbell399033133 -> Victreebel399033133[arrowhead=none, arrowtail=empty, dir=both];
+    
+}
+@enduml
